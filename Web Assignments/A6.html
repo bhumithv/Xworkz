@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="icon" type="image/jpg" href="i1.png">
+    <style>
+        body {
+            margin: 0;
+            background-color: #212121;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #212121;
+        }
+        .navbar .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .left-section img {
+            width: 40px;
+            margin-right: 20px;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            outline: none;
+            background-color: #cbcbcb;
+            color: #fff;
+            margin-left: 70px;
+            width: 600px;
+        }
+        .navbar .search-bar button {
+            padding: 10px;
+            border: none;
+            border-radius: 0 25px 25px 0;
+            background-color: #ffb7b7;
+            color: #fff;
+            cursor: pointer;
+            
+        }
+        .navbar .icons {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .icons img {
+            width: 24px;
+            height: 24px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .video-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .channel-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #b0b0b0;
+            border-radius: 10px;
+        }
+        .channel-info .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .channel-info .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .channel-info .subscribe-btn {
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right:260px;
+        }
+        .channel-info .actions {
+            display: flex;
+            align-items: center;
+        }
+        .channel-info .actions img {
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #212121;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar .video {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .sidebar .video iframe {
+            border-radius: 10px;
+        }
+        .sidebar .video-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        .sidebar .video-info h4 {
+            margin: 0;
+            font-size: 14px;
+        }
+        .sidebar .video-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <img src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500" height="55vh" width="65vh" alt="YouTube Logo">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><img style="height: 15px; width: 15px;" src="magnifying-glass.png" alt="Search Icon"></button>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="video.png" alt="Upload Icon">
+            <img src="notification.png" alt="Notification Icon">
+            <img src="Seoul.jpg" alt="Profile Icon">
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="video-container">
+                <iframe style="border: none; border-radius: 15px;" width="100%" height="500px" src="https://www.youtube.com/embed/60ItHLz5WEA" title="Charlie Puth - Attention [Official Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h2>Alan Walker - Faded</h2>
+                </div>
+            </div>
+            <div class="channel-info">
+                <div class="left-section">
+                    <img class="profile-pic" src="Alan.jpg" alt="Profile Picture">
+                    <div>
+                        <div style="font-weight: bold;">Alan Walker</div>
+                        <div style="font-size: 14px;">20M subscribers</div>
+                    </div>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+                <div class="actions">
+                    <img src="like.png" alt="Like Icon">
+                    <span style="margin-left: 5px; margin-right: 15px;">1.2M</span>
+                    <img src="dont-like.png" alt="Dislike Icon">
+                    <img src="share.png" alt="Share Icon">
+                    <img src="more.png" alt="More Icon">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" target="_blank">
+                    <iframe style="border-radius: 10px;" width="168" height="94" src="https://www.youtube.com/embed/60ItHLz5WEA" title="Alan Walker - Faded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <div class="video-info">
+                    <h4>Wiz Khalifa - See You Again ft. Charlie Puth</h4>
+                    <p>Wiz Khalifa • 5.2B views</p>
+                </div>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" target="_blank">
+                    <iframe style="border-radius: 10px;" width="168" height="94" src="https://www.youtube.com/embed/60ItHLz5WEA" title="Alan Walker - Faded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <div class="video-info">
+                    <h4>Ed Sheeran - Shape of You</h4>
+                    <p>Ed Sheeran • 5.8B views</p>
+                </div>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" target="_blank">
+                    <iframe style="border-radius: 10px;" width="168" height="94" src="https://www.youtube.com/embed/60ItHLz5WEA" title="Alan Walker - Faded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <div class="video-info">
+                    <h4>Justin Bieber - Sorry</h4>
+                    <p>Justin Bieber • 3.5B views</p>
+                </div>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" target="_blank">
+                    <iframe style="border-radius: 10px;" width="168" height="94" src="https://www.youtube.com/embed/60ItHLz5WEA" title="Alan Walker - Faded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <div class="video-info">
+                    <h4>Maroon 5 - Sugar</h4>
+                    <p>Maroon 5 • 3.6B views</p>
+                </div>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" target="_blank">
+                    <iframe style="border-radius: 10px;" width="168" height="94" src="https://www.youtube.com/embed/60ItHLz5WEA" title="Alan Walker - Faded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <div class="video-info">
+                    <h4>Alan Walker - Faded</h4>
+                    <p>Alan Walker • 3.5B views</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
