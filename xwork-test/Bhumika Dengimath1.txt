@@ -1,0 +1,59 @@
+1. Explain Polymorphism with an exmaple.
+
+   Polymorphism: When object is a type of child class and reference is a type of parent class this is called as polymorphism. 
+   And this is achieved by passing parameter by passing child references.
+   
+   Run time polymorphism: Here the override comes into picture--both classes having same method name but functionalities are differnt is run time polymorphism.
+   Run time polymorphism is achieved using Method overriding. 
+   
+   Compile time polymorphism: Here the overload comes into the picture--here the methods having same name but different number of parameters
+   or different type of parameter. Compile time polymporphism is achieved using Method overloading.
+   
+3. Explain Inheritence with an example.
+ 
+   Inheritence: It is a process of acquaring the properties from parent class to child class or from derived class to base class.
+   And this polymorphism is achieved using extend keyword.It is also called as is a relationship.
+   
+   For example: class AirForce extends ArmedForce
+   
+    Types of inheritence:
+     
+    1. Single inheritence:The process of acquaring the properties from one parent class to one single child class.
+    Example: Simple calculator
+	
+    2. Multiple inheritence:The process of acquaring the properties from one parent class to one or more child class.
+	Example:Nokia mobile phone--smart phone--android advance phone--android
+	
+    3. Multilevel inheritence:The process of acquaring the propertiees from 2 parent class to one child class.(not most likely to be used in industry)
+	
+    4. Hybrid inheritence	
+	
+4. Explain Encapsulation with an example.
+    
+    Encapsulation: The process of binding all data into one single unit is termed as encpsulation.
+    This encapsulation is achieved using private keyword. 
+    
+    5 rules to be followed in encapsulation:
+    1. Default constructor
+    2. Public class
+    3. Private data members
+    4. Public getter and setter
+
+2.  Explain Constructor chaining with an example.
+
+    Constructor: Its a special type of method which has same name as class and this method does not have any return type.
+
+    There are 2 types of constructor:
+    1. Default constructor(Zero parameterized):This constructor has no parameter and it is defaultly created by compiler internally if the user does not.
+       public class Intestellar{
+        public void Intestellar(){
+        }
+       }		
+    2. Parameterized constructor:This constructor has one or more parameter hence the name termed as parameterized constructor.
+       public class Intestellar{
+       public void Intestellar(String starName,String galaxyName){
+       }
+      }
+
+    	  
+      
